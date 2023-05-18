@@ -17,3 +17,8 @@ jobs:
 
     - name: Execute Gradle build
       run: ./gradlew build -x test
+      
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: ./build/libs/cicd1-*-SNAPSHOT.jar
