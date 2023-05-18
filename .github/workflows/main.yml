@@ -25,6 +25,7 @@ jobs:
 
 
   docker:
+    needs: gradle
     runs-on: ubuntu-altest
     steps :
         - uses: actions/checkout@v3
