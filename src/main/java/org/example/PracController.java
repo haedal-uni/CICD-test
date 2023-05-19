@@ -13,7 +13,7 @@ public class PracController {
 
 	@GetMapping("/hello")
 	public String hello(){
-		return "helloWorld";
+		return "coco";
 	}
 
 	@GetMapping("/hello2")
